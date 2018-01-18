@@ -31,17 +31,6 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": [
-      "warn",
-      {
-        "devDependencies": [
-          "**/test/**",
-          "**/__tests__/**",
-          "**/stories/**"
-        ],
-        "optionalDependencies": false
-      }
-    ],
     "jsx-a11y/label-has-for": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "object-curly-spacing": [
@@ -86,7 +75,6 @@
       4
     ],
     "no-duplicate-imports": "off",
-    // we use eslint-import-plugin instead
     "react/jsx-indent-props": [
       "error",
       4
