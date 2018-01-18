@@ -43,6 +43,9 @@ module.exports = {
             use: 'raw-loader'
         }]
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: __dirname + "/app/index.tmpl.html"
