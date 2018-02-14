@@ -5,7 +5,7 @@ const path = require('path');
 const port = 8081;
 
 module.exports = {
-    entry: __dirname + "/app/main.jsx",
+    entry: __dirname + "/app/index.jsx",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js"

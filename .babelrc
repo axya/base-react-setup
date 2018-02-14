@@ -1,5 +1,9 @@
 {
   "presets": ["react", "es2015"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ],
   "env": {
     "development": {
       "plugins": [["react-transform", {
@@ -9,6 +13,13 @@
           "locals": ["module"]
         }]
       }]]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
     }
   }
 }
